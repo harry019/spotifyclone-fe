@@ -1,0 +1,54 @@
+/* Flex Utilities */
+.flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.bg-black{
+    background-color: #000000;
+    color: white;
+}   
+.bg-library-grey{
+    background-color: #121212;
+    color: white;
+}
+
+.bg-library2-grey{
+    background-color: #1f1f1f;
+    color: white;
+}
+
+.invert{
+    filter: invert(1);
+}
+
+.rounded{
+    border-radius: 7px;
+}
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading .show-all{
+    color: #aaaaaa;
+    font-size: 15px;
+    margin: 0 10px ;
+}
+
+.bg-header{
+    background: linear-gradient(to bottom, #676767, #4e4e4e,#434343); 
+    color: white;
+}
+
+.bg-main{
+    background: linear-gradient(to bottom, #2d2d2d, #121212);
+}

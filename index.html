@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+
+</head>
+
+<body class="bg-black">
+    <header>
+        <div class="top bg-black">
+            <div class="logo">
+                <img class="invert" src="Pictures_and_logos/logo.svg" alt="Spotify Logo">
+            </div>
+            <div class="middlenav">
+                <div class="circle-bg"></div>
+                <img class="invert home-icon" src="Pictures_and_logos/home.svg" alt="home">
+                <div class="search-container">
+                    <img class="invert search-icon" src="Pictures_and_logos/search.svg" alt="search">
+                    <input type="text" placeholder="What do you want to play?">
+                    <img class="invert browser-icon" src="Pictures_and_logos/browser.svg" alt="browser">
+                </div>
+            </div>
+            <div class="login-signup">
+                <p id="signup">Sign up</p>
+                <button id="login">Log in</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container flex">
+
+            <div class="left border bg-library-grey rounded menu-closed">
+                <!-- Sticky Header -->
+                <div class="library-header">
+                    <div class="library">
+                        <img class="invert library-icon" src="Pictures_and_logos/library.svg" alt="Library">
+                        <p class="your-library">Your Library</p>
+                        <img class="invert add-icon" src="Pictures_and_logos/add.svg" alt="Add">
+                    </div>
+                </div>
+
+                <!-- Scrollable Content -->
+                <div class="scrollable-content">
+                    <div class="create-playlist bg-library2-grey rounded">
+                        <p class="p1">Create your first playlist</p>
+                        <p class="p2">It's easy, we'll help you</p>
+                        <button>Create playlist</button>
+                    </div>
+                    <div class="create-podcasts bg-library2-grey rounded">
+                        <p class="p3">Let's find some podcasts to follow</p>
+                        <p class="p4">We'll keep you updated on new episodes</p>
+                        <button>Browse podcasts</button>
+                    </div>
+                </div>
+                <!-- Footer -->
+                <div class="licence">
+                    <ul>
+                        <li>Legal</li>
+                        <li>Safety&Privacy Center</li>
+                        <li>Privacy Policy</li>
+                        <li>Cookies</li>
+                        <li>About Ads</li>
+                        <li>Accessibility</li>
+                    </ul>
+                    <div class="cookies">Cookies</div>
+                    <button class="language">🌐English</button>
+                </div>
+            </div>
+
+
+            <!-- Right Section -->
+            <div class="right border bg-cards-grey rounded">
+                <section class="artist-section">
+                    <div class="heading">
+                        <h2>Popular artists</h2>
+                        <h2 class="show-all">show all</h2>
+                    </div>
+                    <div class="artist-container">
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <a href="Pritam_right.html">
+                                    <img src="https:/i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+                                        alt="pritam">
+                                </a>
+                                <div class="play-button">▶</div>
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="name">
+                                <p>Pritam</p>
+                                <span>Artist</span>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <a href="">
+                                    <img src="https:/i.scdn.co/image/ab67616100005174bd6fbc7d0973cc33940781ad"
+                                        alt="Sachin-Jigar">
+                                </a>
+                                <div class="overlay"></div>
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>Sachin-Jigar</p>
+                                <span>Artist</span>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <a href="">
+                                    <img src="Pictures_and_logos/arjit.jpg" alt="Arjit Singh">
+                                </a>
+                                <div class="overlay"></div>
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>Arjit Singh</p>
+                                <span>Artist</span>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <a href="">
+                                    <img src="https:/i.scdn.co/image/ab67616100005174b19af0ea736c6228d6eb539c"
+                                        alt="A.R.Rahman">
+                                </a>
+                                <div class="overlay"></div>
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>A.R. Rahman</p>
+                                <span>Artist</span>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <a href="">
+                                    <img src="https:/i.scdn.co/image/ab6761610000517490b6c3d093f9b02aad628eaf"
+                                        alt="Vishal-Shekhar">
+                                </a>
+                                <div class="overlay"></div>
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>Vishal-Shekhar</p>
+                                <span>Artist</span>
+                            </div>
+                        </div>
+
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <a href="">
+                                    <img src="https:/i.scdn.co/image/ab67616100005174c40600e02356cc86f0debe84"
+                                        alt="Atif Aslam">
+                                </a>
+                                <div class="overlay"></div>
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>Atif Aslam</p>
+                                <span>Artist</span>
+                            </div>
+                        </div>
+
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <img src="https:/i.scdn.co/image/ab676161000051740f0be2054fe9594026a6b843"
+                                    alt="Atif Aslam">
+                                <div class="overlay"></div>
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>Anirudh Ravichander</p>
+                                <span>Artist</span>
+                            </div>
+                        </div>
+
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <img src="https://i.scdn.co/image/ab676161000051748de0e6e7e55d7773931ab7f4"
+                                    alt="Udit Narayan">
+                                <div class="overlay"></div>
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>Udit Narayan</p>
+                                <span>Artist</span>
+                            </div>
+                        </div>
+
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <img src="https://i.scdn.co/image/ab67616100005174a37271f7a4862a6e99ce345f"
+                                    alt="Amit Trivedi">
+                                <div class="overlay"></div>
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>Amit Trivedi</p>
+                                <span>Artist</span>
+                            </div>
+                        </div>
+
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <img src="https://i.scdn.co/image/ab676161000051743db0499a689aa9b4a47ebba3"
+                                    alt="Shankar-Ehsaan-Loy">
+                                <div class="overlay"></div>
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>Shankar-Ehsaan-Loy</p>
+                                <span>Artist</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="album-section">
+                    <div class="heading">
+                        <h2>Popular albums and singles</h2>
+                        <h2 class="show-all">show all</h2>
+                    </div>
+                    <div class="album-container">
+                        <div class="album-card">
+                            <div class="album-image">
+                                <a href="glorry_right.html">
+                                    <img src="https:/i.scdn.co/image/ab67616d00001e02aad3f4b601ae8763b3fc4e88"
+                                        alt="album 1">
+                                </a>
+                                <!-- <div class="overlay"></div> -->
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>GLORY</p>
+                                <span>Yo Yo Honey Singh</span>
+                            </div>
+                        </div>
+                        <div class="album-card">
+                            <div class="album-image">
+                                <img src="https:/i.scdn.co/image/ab67616d00001e0209c9bf421422262c368009d6"
+                                    alt="album 2">
+                                <div class="overlay"></div>
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>Patandar</p>
+                                <span>Arjan Dhillon, Mxrci</span>
+                            </div>
+                        </div>
+                        <div class="album-card">
+                            <div class="album-image">
+                                <img src="https:/i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3"
+                                    alt="album 3">
+                                <!-- <div class="overlay"></div> -->
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>Aashiqui 2</p>
+                                <span>Mithoon, Ankit Tiwari, Jeet Gannguli</span>
+                            </div>
+                        </div>
+                        <div class="album-card">
+                            <div class="album-image">
+                                <img src="https:/i.scdn.co/image/ab67616d00001e0272a77d038887cdc425f5ee55"
+                                    alt="album 4">
+                                <!-- <div class="overlay"></div> -->
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>Jo Tum Mere Ho</p>
+                                <span>Anuv Jain</span>
+                            </div>
+                        </div>
+                        <div class="album-card">
+                            <div class="album-image">
+                                <img src="https:/i.scdn.co/image/ab67616d00001e02bb25239324c4e16ae01fda36"
+                                    alt="album 5">
+                                <!-- <div class="overlay"></div> -->
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>Making Memories</p>
+                                <span>Karan Aujla, Ikky</span>
+                            </div>
+                        </div>
+
+                        <div class="album-card">
+                            <div class="album-image">
+                                <img src="https:/i.scdn.co/image/ab67616d00001e02707ea5b8023ac77d31756ed4"
+                                    alt="album 6">
+                                <!-- <div class="overlay"></div> -->
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>Yeh Jawaani Hai Deewani</p>
+                                <span>Pritam</span>
+                            </div>
+                        </div>
+
+                        <div class="album-card">
+                            <div class="album-image">
+                                <img src="https:/i.scdn.co/image/ab67616d00001e025f3ede47954a93aa03efe5f9"
+                                    alt="album 6">
+                                <!-- <div class="overlay"></div> -->
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>ANIMAL</p>
+                                <span>Manan Bhardwaj, Vishal Mishra, Jaani</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="radio-section">
+                    <div class="heading">
+                        <h2>Popular radio</h2>
+                        <h2 class="show-all">show all</h2>
+                    </div>
+                    <div class="radio-container">
+                        <div class="radio-card">
+                            <div class="radio-image">
+                                <img src="https:/pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4YRxDV8wJFPHPTeXepOstw/en"
+                                    alt="Radio1">
+                                <!-- <div class="overlay"></div> -->
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>With Sachin-Jigar, Amit Trivedi, Mithoon and more</p>
+                            </div>
+
+                        </div>
+                        <div class="radio-card">
+                            <div class="radio-image">
+                                <img src="https:/pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/2FKWNmZWDBZR4dE5KX4plR/en"
+                                    alt="Radio 2">
+                                <!-- <div class="overlay"></div> -->
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>With Karan Aujla, Shubh, AP Dhillon and more</p>
+                            </div>
+                        </div>
+                        <div class="radio-card">
+                            <div class="radio-image">
+                                <img src="https:/pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4fEkbug6kZzzJ8eYX6Kbbp/en-GB"
+                                    alt="Radio 3">
+                                <!-- <div class="overlay"></div> -->
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>With Pritam, Mohit Chauhan, Shaan and more</p>
+                            </div>
+                        </div>
+                        <div class="radio-card">
+                            <div class="radio-image">
+                                <img src="https:/pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/70B80Lwx2sxti0M1Ng9e8K/en"
+                                    alt="Radio 4">
+                                <!-- <div class="overlay"></div> -->
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>With Uttam Singh, Abhijeet, Lata Mangeshkar and more</p>
+                            </div>
+                        </div>
+                        <div class="radio-card">
+                            <div class="radio-image">
+                                <img src="https:/pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/0oOet2f43PA68X5RxKobEy/en-GB"
+                                    alt="Radio 5">
+                                <!-- <div class="overlay"></div> -->
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>With A.R. Rahman, Vishal-Shekhar, Atif Aslam and more</p>
+                            </div>
+                        </div>
+
+                        <div class="radio-card">
+                            <div class="radio-image">
+                                <img src="https:/pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4PULA4EFzYTrxYvOVlwpiQ/en"
+                                    alt="Radio 6">
+                                <!-- <div class="overlay"></div> -->
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>With Tegi Pannu, AP Dhillon, Shubh and more</p>
+                            </div>
+                        </div>
+
+                        <div class="radio-card">
+                            <div class="radio-image">
+                                <img src="https:/pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/0GF4shudTAFv8ak9eWdd4Y/en"
+                                    alt="Radio 6">
+                                <!-- <div class="overlay"></div> -->
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>With Mukesh, Hemant Kumar, Tabassum and more</p>
+                            </div>
+                        </div>
+
+                </section>
+
+
+                <section class='Featured-Chart-section'>
+                    <div class="heading">
+                        <h2>Featured Charts</h2>
+                        <h2 class="show-all">show all</h2>
+                    </div>
+                    <div class="featured-chart-container">
+                        <div class="featured-cards">
+                            <div class="featured-image">
+                                <img src="https:/charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg"
+                                    alt="chart-1">
+                                <div class="overlay"></div>
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>Your weekly update of the most played tracks right now - Global.</p>
+                            </div>
+                        </div>
+                        <div class="featured-cards">
+                            <div class="featured-image">
+                                <img src="https:/charts-images.scdn.co/assets/locale_en/regional/weekly/region_us_default.jpg"
+                                    alt="Chart-2">
+                                <div class="overlay"></div>
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>Your weekly update of the most played tracks right now - USA.</p>
+                            </div>
+                        </div>
+                        <div class="featured-cards">
+                            <div class="featured-image">
+                                <img src="https:/charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg"
+                                    alt="Chart-3">
+                                <div class="overlay"></div>
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>Your daily update of the most played tracks right now - Global.</p>
+                            </div>
+                        </div>
+                        <div class="featured-cards">
+                            <div class="featured-image">
+                                <img src="https:/charts-images.scdn.co/assets/locale_en/regional/daily/region_us_default.jpg"
+                                    alt="Chart-4">
+                                <div class="overlay"></div>
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>Your daily update of the most played tracks right now - USA.</p>
+                            </div>
+                        </div>
+                        <div class="featured-cards">
+                            <div class="featured-image">
+                                <img src="https:/charts-images.scdn.co/assets/locale_en/viral/daily/region_global_default.jpg"
+                                    alt="chart-5">
+                                <div class="overlay"></div>
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>Your daily update of the most viral tracks right now - Global.</p>
+                            </div>
+                        </div>
+                        <div class="featured-cards">
+                            <div class="featured-image">
+                                <img src="https:/charts-images.scdn.co/assets/locale_en/viral/daily/region_us_default.jpg"
+                                    alt="Chart-6">
+                                <div class="overlay"></div>
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>Your daily update of the most viral tracks right now - USA.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="oureditor-section">
+                    <div class="heading">
+                        <h2>Playlist from our editor</h2>
+                        <h2 class="show-all">show all</h2>
+                    </div>
+                    <div class="playlist-from-our-editor">
+                        <div class="spotifyplaylists">
+                            <div class="spotifyplaylists-image">
+                                <img src="https:/i.scdn.co/image/ab67706f00000002c6486e03a346238d10690ea6"
+                                    alt="playlist-1">
+                                <div class="overlay"></div>
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>The hottest 50. Cover: Gracie Abrams</p>
+                            </div>
+                        </div>
+                        <div class="spotifyplaylists">
+                            <div class="spotifyplaylists-image">
+                                <img src="https:/i.scdn.co/image/ab67706f0000000277c91d9f09e4deb8a2ede4cb"
+                                    alt="playlist-2">
+                                <div class="overlay"></div>
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>The biggest Christmas songs of all time.</p>
+                            </div>
+                        </div>
+                        <div class="spotifyplaylists">
+                            <div class="spotifyplaylists-image">
+                                <img src="https:/i.scdn.co/image/ab67706f0000000258cb9399d2d48a524106c0e4"
+                                    alt="playlist-3">
+                                <div class="overlay"></div>
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>iykyk</p>
+                            </div>
+                        </div>
+                        <div class="spotifyplaylists">
+                            <div class="spotifyplaylists-image">
+                                <img src="https:/i.scdn.co/image/ab67706f000000024dbd336b06518c0a2fc75149"
+                                    alt="playlist-4">
+                                <div class="overlay"></div>
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>Warm instrumental versions of your favorite Christmas songs.</p>
+                            </div>
+                        </div>
+                        <div class="spotifyplaylists">
+                            <div class="spotifyplaylists-image">
+                                <img src="https:/i.scdn.co/image/ab67706f000000027dc5028b26eb62f22d31bb1f"
+                                    alt="playlist-5">
+                                <div class="overlay"></div>
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>the beat of your drift</p>
+                            </div>
+                        </div>
+                        <div class="spotifyplaylists">
+                            <div class="spotifyplaylists-image">
+                                <img src="https:/i.scdn.co/image/ab67706f00000002e85a6109ab076d5a2ade47cd"
+                                    alt="playlist-6">
+                                <div class="overlay"></div>
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>New music from BossMan Dlow, Offset and BNYX with Lil Yachty.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <footer>
+                    <div class="company footer-header">
+                        <p>Company</p>
+                        <ul>
+                            <li>About</li>
+                            <li>Jobs</li>
+                            <li>For the Record</li>
+                        </ul>
+                    </div>
+
+                    <div class="communities footer-header">
+                        <p>Communities</p>
+                        <ul>
+                            <li>For Artists</li>
+                            <li>Developers</li>
+                            <li>Advertising</li>
+                            <li>Investors</li>
+                            <li>Vendors</li>
+                        </ul>
+                    </div>
+
+                    <div class="useful-links footer-header">
+                        <p>Useful links</p>
+                        <ul>
+                            <li>Support</li>
+                            <li>Free Mobile App</li>
+                        </ul>
+                    </div>
+
+                    <div class="spotify-plans footer-header">
+                        <p>Spotify Plans</p>
+                        <ul>
+                            <li>Premium Individual</li>
+                            <li>Premium Duo</li>
+                            <li>Premium Family</li>
+                            <li>Premium Student</li>
+                            <li>Spotify Free</li>
+                        </ul>
+                    </div>
+                    <div class="sociallogo">
+                        <img src="Pictures_and_logos/insta.svg" alt="insta">
+                        <img src="Pictures_and_logos/twitter.svg" alt="twitter">
+                        <img src="Pictures_and_logos/facebook.svg" alt="facebook">
+                    </div>
+                </footer>
+                <div class="rights">© 2024 Spotify AB</div>
+            </div>
+        </div>
+
+    </main>
+    <div class="popfornewuser">
+        <div class="preview">
+            <div class="text">
+                <p>Preview of Spotify</p>
+                <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+            </div>
+            <button>Sign up for free</button>
+            <div id="cross"><i class="fa-solid fa-circle-xmark"></i></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

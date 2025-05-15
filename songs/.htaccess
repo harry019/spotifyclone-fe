@@ -1,0 +1,19 @@
+# Allow access to MP3 files
+<FilesMatch "\.(mp3)$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
+
+# Deny access to .htaccess file
+<Files ".htaccess">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+# Enable directory listing
+Options +Indexes
+
+# Allow cross-origin requests (if needed)
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>
