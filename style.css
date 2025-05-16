@@ -672,234 +672,168 @@ footer .sociallogo {
     z-index: 1001;
     /* Ensure it's above other elements */
 }
-
-.hamburger-icon {
-    width: 24px;
-    height: 24px;
-    transition: transform 0.3s ease;
-    fill: white;
-    /* Make the SVG icon white */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  margin-left: 15px;
+  z-index: 1002;
 }
 
-/* Update header styles to properly position the hamburger */
-.top {
-    background-color: #121212;
-    display: flex;
-    align-items: center;
-    padding: 0 10px;
+.bar1, .bar2, .bar3 {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  transform: translate(0, 8px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  transform: translate(0, -8px) rotate(45deg);
+}
+
+/* Mobile media queries */
+@media only screen and (max-width: 768px) {
+  /* Show hamburger, hide default nav */
+  .hamburger-menu {
+    display: block;
+  }
+  
+  .middlenav {
+    display: none;
+  }
+  
+  /* Left sidebar adjustments */
+  .left {
+    position: fixed;
+    top: 50px;
+    left: -100%;
+    width: 70%;
+    height: calc(100vh - 50px);
+    z-index: 1000;
+    transition: left 0.3s ease;
+    padding: 15px;
+    overflow-y: auto;
+  }
+  
+  .left.active {
+    left: 0;
+  }
+  
+  /* Right content adjustments */
+  .right {
     width: 100%;
-}
-
-/* Ensure proper spacing */
-.logo {
-    margin-left: 10px;
-}
-
-/* Left Sidebar Transitions */
-.left {
-    transition: transform 0.3s ease, width 0.3s ease;
-    transform: translateX(0);
-}
-
-.left.menu-closed {
-    transform: translateX(-100%);
-    width: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-/* Adjust right content when menu is closed */
-.right {
-    transition: margin-left 0.3s ease, width 0.3s ease;
-}
-
-.right.full-width {
     margin-left: 0;
-    width: 95vw;
+    padding: 10px;
+    transition: margin-left 0.3s ease;
+  }
+  
+  .right.shifted {
+    margin-left: 0;
+    opacity: 0.7;
+  }
+  
+  /* Header adjustments */
+  .top {
+    padding: 0 10px;
+  }
+  
+  .login-signup {
+    margin-left: auto;
+  }
+  
+  /* Artist and album cards */
+  .artist-container,
+  .album-container,
+  .radio-container,
+  .featured-chart-container,
+  .playlist-from-our-editor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    overflow-x: hidden;
+    white-space: normal;
+  }
+  
+  .artist-card,
+  .album-card,
+  .radio-card,
+  .featured-cards,
+  .spotifyplaylists {
+    width: 100%;
+    display: block;
+  }
+  
+  /* Footer adjustments */
+  footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .footer-header {
+    width: 100%;
+  }
+  
+  .sociallogo {
+    justify-content: flex-start;
+    margin: 20px 0 20px 20px;
+  }
+  
+  /* Preview banner */
+  .preview {
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    padding-bottom: 50px;
+  }
+  
+  .preview button {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    margin-top: 15px;
+  }
+  
+  #cross {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
 }
 
-@media only screen and (max-width: 768px) {
-
-    /* Header adjustments */
-    header {
-        padding: 2px 5px;
-        height: 50px;
-    }
-
-    .middlenav {
-        display: none;
-        /* Hide search on mobile */
-    }
-
-    .logo img {
-        width: 25px;
-        margin: 0 10px;
-    }
-
-    /* Login/Signup buttons */
-    .login-signup {
-        gap: 15px;
-    }
-
-    #login {
-        padding: 10px 20px;
-        font-size: 14px;
-    }
-
-    #signup {
-        font-size: 14px;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .left {
-        position: fixed;
-        top: 65px;
-        left: 0;
-        width: 70vw;
-        z-index: 1000;
-        background-color: #121212;
-    }
-
-    .right {
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .right.full-width {
-        width: 100%;
-    }
-
-    /* Cards layout */
-    .artist-card,
-    .album-card,
-    .radio-card,
-    .featured-cards,
-    .spotifyplaylists {
-        width: calc(50% - 10px);
-        /* Two cards per row */
-        margin: 5px;
-    }
-
-    .artist-image img {
-        width: 100%;
-        height: auto;
-    }
-
-    /* Footer adjustments */
-    footer {
-        flex-direction: column;
-        gap: 20px;
-        padding: 20px 10px;
-    }
-
-    .footer-header {
-        margin-bottom: 15px;
-    }
-
-    .sociallogo {
-        justify-content: center;
-        margin-top: 20px;
-    }
-
-    /* Preview banner */
-    .preview {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 15px 10px;
-    }
-
-    .preview button {
-        margin-top: 15px;
-        width: 100%;
-        padding: 12px 20px;
-    }
-
-    .preview p:nth-of-type(2) {
-        font-size: 14px;
-    }
-}
-
-/* Medium devices (tablets, 768px and down) */
-@media only screen and (max-width: 768px) {
-
-    /* Library section */
-    .library-header .your-library {
-        font-size: 14px;
-    }
-
-    .scrollable-content .create-playlist,
-    .scrollable-content .create-podcasts {
-        padding: 10px;
-    }
-
-
-    .artist-section,
-    .album-section,
-    .radio-section,
-    .Featured-Chart-section,
-    .oureditor-section {
-        margin-bottom: 25px;
-    }
-
-
-    /* Section headings */
-    .artist-section h2,
-    .album-section h2,
-    .radio-section h2,
-    .Featured-Chart-section h2,
-    .oureditor-section h2 {
-        padding: 10px;
-        font-size: 18px;
-    }
-
-    /* Cards layout for tablets */
-    .artist-card,
-    .album-card,
-    .radio-card,
-    .featured-cards,
-    .spotifyplaylists {
-        width: calc(33.33% - 10px);
-        /* Three cards per row */
-    }
-}
-
-/* For landscape orientation on mobile */
-@media only screen and (max-width: 900px) and (orientation: landscape) {
-    .left {
-        height: 100vh;
-        overflow-y: auto;
-    }
-
-    .right {
-        margin-left: 25vw;
-        width: 70vw;
-    }
-
-    /* Adjust card sizes for landscape */
-    .artist-card,
-    .album-card,
-    .radio-card,
-    .featured-cards,
-    .spotifyplaylists {
-        width: calc(33.33% - 10px);
-    }
-}
-
-/* For high-DPI mobile devices */
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-resolution: 192dpi) {
-
-    /* Optimize images for high-DPI screens */
-    .artist-image img,
-    .album-image img,
-    .radio-image img,
-    .featured-image img,
-    .spotifyplaylists-image img {
-        transform: translateZ(0);
-        /* Hardware acceleration */
-    }
+/* Small phone screens */
+@media only screen and (max-width: 480px) {
+  .artist-container,
+  .album-container,
+  .radio-container,
+  .featured-chart-container,
+  .playlist-from-our-editor {
+    grid-template-columns: 1fr;
+  }
+  
+  .login-signup {
+    gap: 5px;
+  }
+  
+  #login {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+  
+  #signup {
+    font-size: 12px;
+  }
 }
