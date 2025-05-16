@@ -702,9 +702,7 @@ footer .sociallogo {
   transform: translate(0, -8px) rotate(45deg);
 }
 
-/* Mobile media queries */
 @media only screen and (max-width: 768px) {
-  /* Show hamburger, hide default nav */
   .hamburger-menu {
     display: block;
   }
@@ -713,7 +711,6 @@ footer .sociallogo {
     display: none;
   }
   
-  /* Left sidebar adjustments */
   .left {
     position: fixed;
     top: 50px;
@@ -760,7 +757,7 @@ footer .sociallogo {
   .playlist-from-our-editor {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 1px;
     overflow-x: hidden;
     white-space: normal;
   }
@@ -816,14 +813,7 @@ footer .sociallogo {
 
 /* Small phone screens */
 @media only screen and (max-width: 480px) {
-  .artist-container,
-  .album-container,
-  .radio-container,
-  .featured-chart-container,
-  .playlist-from-our-editor {
-    grid-template-columns: 1fr;
-  }
-  
+ 
   .login-signup {
     gap: 5px;
   }

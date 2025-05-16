@@ -265,24 +265,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Initialize the player
     initPlayer();
-
-    // Menu toggle functionality (if it exists in your HTML)
-    const hamburger = document.querySelector('.hamburger-menu');
-    const leftSidebar = document.querySelector('.left');
-    const rightContent = document.querySelector('.right');
-    const cross = document.getElementById('cross');
-
-
-    hamburger.addEventListener('click', function () {
-        hamburger.classList.toggle('change');
-        leftSidebar.classList.toggle('active');
-        rightContent.classList.toggle('shifted');
-    });
-
-    // Close the popup when the cross is clicked
-    if (cross) {
-        cross.addEventListener('click', function () {
-            document.querySelector('.popfornewuser').style.display = 'none';
-        });
-    }
 });
