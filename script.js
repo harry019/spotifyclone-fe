@@ -1,12 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     console.log("DOM fully loaded");
 
-    let cross = document.getElementById("cross")
-    let pop = document.getElementById("pop")
-    cross.addEventListener("click", () => {
-        pop.style.display = "none"
-    })
-
     // UI Elements
     const songItems = document.querySelectorAll(".song-item");
     console.log("Found song items:", songItems.length);
@@ -269,8 +263,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Initialize the player
     initPlayer();
+
 });
 
-document.querySelector('.hamburger_menu').addEventListener('click', function() {
+document.querySelector('.hamburger_menu').addEventListener('click', function () {
     document.querySelector('.left').classList.toggle('active');
 });
+
+let cross = document.getElementById("cross")
+let pop = document.getElementById("pop")
+cross.addEventListener("click", () => {
+    pop.style.display = "none"
+})
