@@ -6,27 +6,27 @@
     font-family: 'Roboto', sans-serif;
 }
 
-html, body{
+html,
+body {
     margin: 5px 5px;
     box-sizing: border-box;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 header {
     background-color: #000000;
-    padding: 2px 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: sticky;
     top: 0;
-    z-index: 1;
-    height: 60px; /* Fixed height for the header */
+    z-index: 1000;
+    height: 70px;
 }
 
 
 .top {
-    background-color: #000000;
+    background-color: #121212;
     display: flex;
     align-items: center;
     width: 100%;
@@ -34,9 +34,8 @@ header {
 
 /* Logo Section */
 .logo img {
-    margin: 0 15px;
-    width: 35px;
-    /* Adjust size as needed */
+    padding-left: 1rem;
+    width: 38px;
 }
 
 /* Middle Navigation */
@@ -53,28 +52,24 @@ header {
 /* Home Icon */
 .home-icon {
     width: 25px;
-    /* Adjust size as needed */
     cursor: pointer;
     position: relative;
-    left: 42px;
-    transition: transform 0.3s ease, background-color 0.3sec ease;
+    top: 2px;
+    left: 47.5px;
 }
 
 .circle-bg {
     position: relative;
-    top: 0;
+    top: 1px;
     left: 88px;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background-color: #202020;
-    /* Circle color */
     border-radius: 50%;
-    /* Makes the background circular */
-    transition: transform 0.3s ease, background-color 0.3sec ease;
 }
 
 .circle-bg .home-icon :hover {
-    transform: scale(1.1);
+    transform: scale(0.5);
 }
 
 /* Search Container */
@@ -89,14 +84,15 @@ header {
 }
 
 .search-container input {
-    width: 100%;
-    padding: 16px 52px;
+    height: 35px;
+    width: 60%;
+    padding: 0px 50px;
     border: none;
     border-radius: 45px;
     outline: none;
     background-color: #222;
     color: rgb(255, 255, 255);
-    font-size: 16px;
+    font-size: 12px;
 }
 
 /* Search Icon */
@@ -116,7 +112,7 @@ header {
 /* Browser Icon */
 .search-container .browser-icon {
     position: absolute;
-    right: 15px;
+    right: 100px;
     width: 22px;
     height: 22px;
     cursor: pointer;
@@ -129,38 +125,38 @@ header {
 
 /* Login/Signup Buttons */
 .login-signup {
+    height: 40px;
+    align-items: center;
     display: flex;
-    gap: 35px;
-    /* Spacing between buttons */
+    gap: 15px;
 }
 
 #login {
     background-color: #ffffff;
-    /* Spotify green or preferred color */
     border: none;
-    border-radius: 35px;
-    padding: 14px 29px;
+    border-radius: 30px;
+    padding: 10px 25px;
     color: rgb(0, 0, 0);
-    font-size: 17px;
+    font-size: 12px;
     cursor: pointer;
     font-weight: bolder;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 #login:hover {
-    transform: scale(1.1);
+    transform: scale(1.02);
     /* Zoom in on hover */
     background-color: #e6e6e6;
 }
 
 #signup {
     background: none;
-    margin-top: 15px;
-    font-size: 16px;
+    /* margin-top: 20px; */
+    font-size: 12px;
+    /* height: inherit; */
     cursor: pointer;
     color: #b3b3b3;
     font-weight: bolder;
-    transition: transform 0.3s ease, background-color 0.3sec ease;
 }
 
 #signup:hover {
@@ -169,26 +165,38 @@ header {
     color: white;
 }
 
+.container {
+    display: flex;
+    width: 100%;
+    /* gap: 30px; */
+    position: relative;
+}
+
 
 .left {
     width: 20vw;
     margin: 0;
     padding: 10px 15px;
     padding-bottom: 30px;
-    height: calc(85vh - 48px); /* Full height excluding header */
+    height: calc(85vh - 48px);
+    /* Full height excluding header */
     position: fixed;
-    top: 65px; /* Sticky position below header */
+    top: 70px;
+    /* Sticky position below header */
     background-color: #121212;
     z-index: 1;
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column;
+    /* Stack elements vertically */
 }
 
 .library-header {
     position: sticky;
-    top: 0; /* Sticks at the top within the parent container */
+    top: 0;
+    /* Sticks at the top within the parent container */
     background-color: #121212;
-    z-index: 1; /* Ensure it stays above scrolling content */
+    z-index: 1;
+    /* Ensure it stays above scrolling content */
     padding-bottom: 10px;
     box-shadow: 10px 35px 15px 0 rgba(0, 0, 0, 0.2);
 }
@@ -219,9 +227,12 @@ header {
 }
 
 .scrollable-content {
-    flex: 1; /* Occupies remaining space between header and footer */
-    overflow-y: auto; /* Enables vertical scrolling */
-    padding-right: 5px; /* Space for scrollbar */
+    flex: 1;
+    /* Occupies remaining space between header and footer */
+    overflow-y: auto;
+    /* Enables vertical scrolling */
+    padding-right: 5px;
+    /* Space for scrollbar */
     display: flex;
     flex-direction: column;
     margin-top: 10px;
@@ -229,11 +240,13 @@ header {
 }
 
 .scrollable-content::-webkit-scrollbar {
-    width: 0; /* Width of the scrollbar */
+    width: 0;
+    /* Width of the scrollbar */
 }
 
 .scrollable-content:hover::-webkit-scrollbar {
-    width: 10px; /* Width of scrollbar for Webkit browsers */
+    width: 10px;
+    /* Width of scrollbar for Webkit browsers */
 }
 
 .scrollable-content::-webkit-scrollbar-thumb {
@@ -288,14 +301,17 @@ header {
 .right {
     width: calc(100% - 23vw);
     margin-left: 23vw;
-    height: calc(100vh - 60px); /* Full viewport height minus header height */
-    overflow-y: scroll; /* Ensure scrolling behavior */
+    height: calc(100vh - 60px);
+    /* Full viewport height minus header height */
+    overflow-y: scroll;
+    /* Ensure scrolling behavior */
     position: relative;
     box-sizing: border-box;
 }
 
 .right::-webkit-scrollbar {
-    width: 10px; /* Set a small width for default scrollbar for testing */
+    width: 10px;
+    /* Set a small width for default scrollbar for testing */
 }
 
 .right::-webkit-scrollbar {
@@ -316,7 +332,8 @@ header {
     position: absolute;
     top: 0;
     right: 0;
-    width: 10px; /* Custom scrollbar width */
+    width: 10px;
+    /* Custom scrollbar width */
     background: #f1f1f1;
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -332,7 +349,8 @@ header {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 50px; /* Adjust dynamically with JS */
+    height: 50px;
+    /* Adjust dynamically with JS */
     background: #888;
     border-radius: 8px;
     cursor: pointer;
@@ -342,7 +360,7 @@ header {
     background: #555;
 }
 
-.album-header{
+.album-header {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -351,7 +369,7 @@ header {
     height: 33vh;
 }
 
-.album-header .album-img{
+.album-header .album-img {
     width: 175px;
     height: 175px;
     border-radius: 4px;
@@ -359,7 +377,7 @@ header {
     box-shadow: 0 4px 60px rgba(0, 0, 0, .5);
 }
 
-.album-title{
+.album-title {
     margin-top: 30px;
 }
 
@@ -367,47 +385,55 @@ header {
     font-size: 16px;
     font-weight: 400;
     color: #ffffff;
-  }
-  
+}
+
 .album-title p:nth-of-type(2) {
     font-size: 84px;
     font-weight: bolder;
     color: #ffffff;
-  }
+}
 
-  .artist-info {
-    display: flex; /* Enable flexbox layout */
-    align-items: center; /* Vertically align items */
-    gap: 10px; /* Add spacing between image and text */
-  } 
+.artist-info {
+    display: flex;
+    /* Enable flexbox layout */
+    align-items: center;
+    /* Vertically align items */
+    gap: 10px;
+    /* Add spacing between image and text */
+}
 
 .artist-info .profile-img {
     width: 25px;
-    height: 25px; 
+    height: 25px;
     /* padding-top: 40px; */
-    border-radius: 50%; /* Make the image circular */
-    object-fit: cover; /* Ensure the image fills the circle */
-  }
-  
-  /* Text styling for artist info */
-.artist-info p:first-of-type{
-    font-size: 14px;
-    color: #ffffff; /* Subtle text color */
-    /* padding-top: 40px; */
-    font-weight: 700;
-  }
-
-.artist-info p:nth-of-type(2){
-    font-size: 14px;
-    /* padding-top: 40px; */
-    color: #b2b2b2; /* Subtle text color */
+    border-radius: 50%;
+    /* Make the image circular */
+    object-fit: cover;
+    /* Ensure the image fills the circle */
 }
 
-.main{
+/* Text styling for artist info */
+.artist-info p:first-of-type {
+    font-size: 14px;
+    color: #ffffff;
+    /* Subtle text color */
+    /* padding-top: 40px; */
+    font-weight: 700;
+}
+
+.artist-info p:nth-of-type(2) {
+    font-size: 14px;
+    /* padding-top: 40px; */
+    color: #b2b2b2;
+    /* Subtle text color */
+}
+
+.main {
     height: 75vh;
     z-index: 10;
 
 }
+
 .buttons {
     display: flex;
     justify-content: space-between;
@@ -415,7 +441,8 @@ header {
     margin: 20px 10px 20px 20px;
 }
 
-.left-buttons, .right-buttons {
+.left-buttons,
+.right-buttons {
     display: flex;
     align-items: center;
     gap: 15px;
@@ -434,13 +461,15 @@ header {
     cursor: pointer;
 }
 
-.add-button, .more-button, .list img {
+.add-button,
+.more-button,
+.list img {
     width: 30px;
     height: 30px;
     cursor: pointer;
 }
 
-.list img{
+.list img {
     margin-right: 15px;
     width: 15px;
     height: 15px;
@@ -455,17 +484,18 @@ header {
     cursor: pointer;
 }
 
-.time img{
+.time img {
     width: 15px;
     height: 15px;
     cursor: pointer;
 }
+
 /* **************************************************************************** */
 .song-list {
     color: white;
     font-family: Arial, sans-serif;
     padding: 20px;
-    margin-bottom: 40px; 
+    margin-bottom: 40px;
 }
 
 .song-list-header {
@@ -538,28 +568,30 @@ header {
     height: 16px;
     opacity: 1;
 }
+
 /* **************************************************************************** */
 .oureditor-section {
-    clear: both; /* Ensures it starts on a new line */
+    clear: both;
+    /* Ensures it starts on a new line */
 }
 
-.oureditor-section h2{
+.oureditor-section h2 {
     font-size: 25px;
     font-weight: bolder;
     padding: 0 2px;
     clear: both;
 }
 
-.oureditor-section .discography{
+.oureditor-section .discography {
     font-size: 15px;
-    color:#989797;
+    color: #989797;
 }
 
-.discography{
+.discography {
     margin-right: 45px;
 }
 
-.oureditor-section h2:hover{
+.oureditor-section h2:hover {
     text-decoration: underline;
     cursor: pointer;
 }
@@ -590,7 +622,8 @@ header {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 10px; /* Space between image and name */
+    gap: 10px;
+    /* Space between image and name */
     transition: transform 0.3s ease;
     cursor: pointer;
 }
@@ -603,7 +636,7 @@ header {
 .spotifyplaylists-image img {
     width: 100%;
     height: 100%;
-   object-fit: contain;
+    object-fit: contain;
 }
 
 .play-button {
@@ -629,13 +662,15 @@ header {
     transform: scale(1.1);
 }
 
-.spotifyplaylists, .name p{
+.spotifyplaylists,
+.name p {
     margin: 5px 2px;
     color: #aaaaaa;
 
 }
 
-.spotifyplaylists, .name span{
+.spotifyplaylists,
+.name span {
     margin-bottom: 30px;
 }
 
@@ -644,7 +679,7 @@ header {
     clear: both;
 }
 
-footer{
+footer {
     margin-top: 30px;
     margin-bottom: 50px;
     margin-left: 20px;
@@ -653,26 +688,26 @@ footer{
     border-bottom: 1px solid rgb(53, 51, 51);
 }
 
-.footer-header p{
+.footer-header p {
     margin: 0 20px;
     font-size: 16px;
     font-weight: bold;
 }
 
 
-.footer-header ul{
-    list-style : none;
+.footer-header ul {
+    list-style: none;
     margin: 0 20px;
     margin-bottom: 40px;
 }
 
-.footer-header ul li{
+.footer-header ul li {
     margin: 10px 0;
     color: #a9b3b3;
     margin-bottom: 10px;
 }
 
-footer .sociallogo{
+footer .sociallogo {
     display: flex;
     height: 25px;
     width: 25px;
@@ -709,13 +744,13 @@ footer .sociallogo{
     text-decoration: underline;
 }
 
-.cookies{
+.cookies {
     margin-bottom: 20px;
     margin-left: 10px;
     color: white;
 }
 
-.rights{
+.rights {
     padding: 0 0 100px 35px;
     font-size: 14px;
     color: #a9b3b3;
@@ -726,7 +761,8 @@ footer .sociallogo{
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 34px; /* Increased height to fit all elements */
+    height: 34px;
+    /* Increased height to fit all elements */
     background-color: #000;
     padding: 20px;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
@@ -739,8 +775,10 @@ footer .sociallogo{
     color: white;
     font-size: 16px;
     width: 30%;
-    text-align: left;  /* Aligns the text to the left */
-    justify-content: flex-start;  /* Ensure the content is aligned to the left */
+    text-align: left;
+    /* Aligns the text to the left */
+    justify-content: flex-start;
+    /* Ensure the content is aligned to the left */
 }
 
 .controls {
@@ -759,11 +797,13 @@ footer .sociallogo{
 }
 
 #playPauseButton.pause {
-    display: none; /* Hide the pause icon by default */
+    display: none;
+    /* Hide the pause icon by default */
 }
 
 #playPauseButton.play {
-    display: inline-block; /* Show the play icon */
+    display: inline-block;
+    /* Show the play icon */
 }
 
 .controls img {
@@ -780,11 +820,13 @@ footer .sociallogo{
 .seekbar-container {
     margin-top: 10px;
     display: flex;
-    align-items: center;  /* Align items horizontally (in a row) */
+    align-items: center;
+    /* Align items horizontally (in a row) */
     width: 60%;
     margin-bottom: 10px;
     margin-left: 30%;
-    justify-content: flex-start;  /* Align items to the left */
+    justify-content: flex-start;
+    /* Align items to the left */
 }
 
 .songtime {
@@ -829,9 +871,9 @@ footer .sociallogo{
 
 
 .volume-control-container {
-    position: absolute;  
-    right: 100px;  
-    bottom: 12px; 
+    position: absolute;
+    right: 100px;
+    bottom: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -847,13 +889,15 @@ footer .sociallogo{
 }
 
 .volume-control {
-    width: 100px;  
-    height: 4px;  
+    width: 100px;
+    height: 4px;
     z-index: 5;
-} 
+}
+
 
 /* Small devices (phones, 768px and down) */
 @media only screen and (max-width: 768px) {
+
     /* Header Modifications */
     header {
         height: auto;
@@ -861,7 +905,8 @@ footer .sociallogo{
     }
 
     .middlenav {
-        display: none; /* Hide search on mobile */
+        display: none;
+        /* Hide search on mobile */
     }
 
     .login-signup {
@@ -875,7 +920,8 @@ footer .sociallogo{
 
     /* Hide Library Section */
     .left {
-        display: none; /* Completely hide the library section */
+        display: none;
+        /* Completely hide the library section */
     }
 
     /* Adjust Right Section */
@@ -921,7 +967,8 @@ footer .sociallogo{
         padding: 10px;
     }
 
-    .song-list-header, .song-item {
+    .song-list-header,
+    .song-item {
         margin: 10px 5px;
     }
 
@@ -994,18 +1041,20 @@ footer .sociallogo{
 /* Extra Small devices (phones, 480px and down) */
 @media only screen and (max-width: 480px) {
     .album-title p:nth-of-type(2) {
-        font-size: 32px;
+        font-size: 20px;
     }
 
     .spotifyplaylists {
-        width: calc(100% - 20px); /* Single column for very small devices */
+        width: calc(100% - 20px);
+        /* Single column for very small devices */
     }
 
     .song-info {
         max-width: 150px;
     }
 
-    #login, #signup {
+    #login,
+    #signup {
         font-size: 12px;
         padding: 8px 15px;
     }

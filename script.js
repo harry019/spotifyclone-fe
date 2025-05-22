@@ -1,7 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
     console.log("DOM fully loaded");
 
-
+    let cross = document.getElementById("cross")
+    let pop = document.getElementById("pop")
+    cross.addEventListener("click", () => {
+        pop.style.display = "none"
+    })
 
     // UI Elements
     const songItems = document.querySelectorAll(".song-item");
@@ -265,4 +269,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Initialize the player
     initPlayer();
+});
+
+document.querySelector('.hamburger_menu').addEventListener('click', function() {
+    document.querySelector('.left').classList.toggle('active');
 });
