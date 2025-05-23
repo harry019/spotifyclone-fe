@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="showall.css">
+    <link rel="stylesheet" href="utility.css">
+
+</head>
+
+<body class="bg-black">
+    <header>
+        <div class="top bg-black">
+            <div class="logo">
+                <i class="fa-solid fa-bars hamburger_menu"></i>
+                <img class="invert logo" src="Pictures_and_logos/logo.svg" alt="Spotify Logo">
+            </div>
+            <div class="middlenav">
+                <div class="circle-bg"></div>
+                <a href="index.html"><img class="invert home-icon" src="Pictures_and_logos/home.svg" alt="home"></a>
+                <div class="search-container">
+                    <img class="invert search-icon" src="Pictures_and_logos/search.svg" alt="search">
+                    <input type="text" placeholder="What do you want to play?">
+                    <img class="invert browser-icon" src="Pictures_and_logos/browser.svg" alt="browser">
+                </div>
+            </div>
+            <div class="login-signup">
+                <p id="signup">Sign up</p>
+                <button id="login">Log in</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container flex">
+
+            <div class="left border bg-library-grey rounded menu-closed">
+                <!-- Sticky Header -->
+                <div class="library-header">
+                    <div class="library">
+                        <img class="invert library-icon" src="Pictures_and_logos/library.svg" alt="Library">
+                        <p class="your-library">Your Library</p>
+                        <img class="invert add-icon" src="Pictures_and_logos/add.svg" alt="Add">
+                    </div>
+                </div>
+
+                <!-- Scrollable Content -->
+                <div class="scrollable-content">
+                    <div class="create-playlist bg-library2-grey rounded">
+                        <p class="p1">Create your first playlist</p>
+                        <p class="p2">It's easy, we'll help you</p>
+                        <button>Create playlist</button>
+                    </div>
+                    <div class="create-podcasts bg-library2-grey rounded">
+                        <p class="p3">Let's find some podcasts to follow</p>
+                        <p class="p4">We'll keep you updated on new episodes</p>
+                        <button>Browse podcasts</button>
+                    </div>
+                </div>
+                <!-- Footer -->
+                <div class="licence">
+                    <ul>
+                        <li>Legal</li>
+                        <li>Safety&Privacy Center</li>
+                        <li>Privacy Policy</li>
+                        <li>Cookies</li>
+                        <li>About Ads</li>
+                        <li>Accessibility</li>
+                    </ul>
+                    <div class="cookies">Cookies</div>
+                    <button class="language">🌐English</button>
+                </div>
+            </div>
+
+
+            <!-- Right Section -->
+            <div class="right border bg-cards-grey rounded">
+                <section class="artist-section">
+                    <div class="heading">
+                        <h2>Popular artists</h2>
+                    </div>
+                    <div class="artist-container">
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <a href="Pritam_right.html">
+                                    <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+                                        alt="pritam">
+                                </a>
+                                <div class="play-button">▶</div>
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="name">
+                                <p>Pritam</p>
+                                <span>Artist</span>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <a href="">
+                                    <img src="Pictures_and_logos/arjit.jpg" alt="Arjit Singh">
+                                </a>
+                                <div class="overlay"></div>
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>Arjit Singh</p>
+                                <span>Artist</span>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <a href="">
+                                    <img src="https://i.scdn.co/image/ab67616100005174b19af0ea736c6228d6eb539c"
+                                        alt="A.R.Rahman">
+                                </a>
+                                <div class="overlay"></div>
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>A.R. Rahman</p>
+                                <span>Artist</span>
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <a href="">
+                                    <img src="https://i.scdn.co/image/ab6761610000517490b6c3d093f9b02aad628eaf"
+                                        alt="Vishal-Shekhar">
+                                </a>
+                                <div class="overlay"></div>
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>Vishal-Shekhar</p>
+                                <span>Artist</span>
+                            </div>
+                        </div>
+
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <a href="">
+                                    <img src="https://i.scdn.co/image/ab67616100005174b69f6182a27407318b632a5f"
+                                        alt="Sachin_Jigar">
+                                </a>
+                                <div class="overlay"></div>
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>Sachin-Jigar</p>
+                                <span>Artist</span>
+                            </div>
+                        </div>
+
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <a href="">
+                                    <img src="https://i.scdn.co/image/ab67616100005174c40600e02356cc86f0debe84"
+                                        alt="Atif Aslam">
+                                </a>
+                                <div class="overlay"></div>
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>Atif Aslam</p>
+                                <span>Artist</span>
+                            </div>
+                        </div>
+
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <img src="https://i.scdn.co/image/ab676161000051740f0be2054fe9594026a6b843"
+                                    alt="Atif Aslam">
+                                <div class="overlay"></div>
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>Anirudh Ravichander</p>
+                                <span>Artist</span>
+                            </div>
+                        </div>
+
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <img src="https://i.scdn.co/image/ab676161000051748de0e6e7e55d7773931ab7f4"
+                                    alt="Udit Narayan">
+                                <div class="overlay"></div>
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>Udit Narayan</p>
+                                <span>Artist</span>
+                            </div>
+                        </div>
+
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <img src="https://i.scdn.co/image/ab67616100005174a37271f7a4862a6e99ce345f"
+                                    alt="Amit Trivedi">
+                                <div class="overlay"></div>
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>Amit Trivedi</p>
+                                <span>Artist</span>
+                            </div>
+                        </div>
+
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <img src="https://i.scdn.co/image/ab676161000051743db0499a689aa9b4a47ebba3"
+                                    alt="Shankar-Ehsaan-Loy">
+                                <div class="overlay"></div>
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>Shankar-Ehsaan-Loy</p>
+                                <span>Artist</span>
+                            </div>
+                        </div>
+
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <img src="https://i.scdn.co/image/ab67616100005174852737800de564b2c0efe165"
+                                    alt="Jasleen Royal">
+                                <div class="overlay"></div>
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>Jasleen Royal</p>
+                                <span>Artist</span>
+                            </div>
+                        </div>
+
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <img src="https://i.scdn.co/image/ab676161000051742cfc402fa29cd2949023a8bf"
+                                    alt="Himesh Reshammiya">
+                                <div class="overlay"></div>
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>Himesh Reshammiya</p>
+                                <span>Artist</span>
+                            </div>
+                        </div>
+
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <img src="https://i.scdn.co/image/ab6761610000517459303d54ce789210e745e1a9"
+                                    alt="Shreya Ghoshal">
+                                <div class="overlay"></div>
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>Shreya Ghoshal</p>
+                                <span>Artist</span>
+                            </div>
+                        </div>
+
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <img src="https://i.scdn.co/image/ab6761610000517496f049daefd1875282baab0a"
+                                    alt="Tanishk Bagchi">
+                                <div class="overlay"></div>
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>Tanishk Bagchi</p>
+                                <span>Artist</span>
+                            </div>
+                        </div>
+
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <img src="https://i.scdn.co/image/ab67616100005174fb13d10be20fdcb5a670f551"
+                                    alt="Vishal Mishra">
+                                <div class="overlay"></div>
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>Vishal Mishra</p>
+                                <span>Artist</span>
+                            </div>
+                        </div>
+
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <img src="https://i.scdn.co/image/ab676161000051749415df28058107b5d54f9fad"
+                                    alt="Sachet-Parampara">
+                                <div class="overlay"></div>
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>Sachet-Parampara</p>
+                                <span>Artist</span>
+                            </div>
+                        </div>
+
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <img src="https://i.scdn.co/image/ab67616100005174935b2dd507212bd72a71d7f9"
+                                    alt="Alka Yagnik">
+                                <div class="overlay"></div>
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>Alka Yagnik</p>
+                                <span>Artist</span>
+                            </div>
+                        </div>
+
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <img src="https://i.scdn.co/image/ab67616100005174a837a6cb82dd949d5e1f9b53"
+                                    alt="Anuv Jain">
+                                <div class="overlay"></div>
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>Anuv Jain</p>
+                                <span>Artist</span>
+                            </div>
+                        </div>
+
+                        <div class="artist-card">
+                            <div class="artist-image">
+                                <img src="https://i.scdn.co/image/ab67616100005174fc043bea91ac91c222d235c9"
+                                    alt="Diljit Dosanjh">
+                                <div class="overlay"></div>
+                                <div class="play-button">▶</div>
+                            </div>
+                            <div class="name">
+                                <p>Diljit Dosanjh</p>
+                                <span>Artist</span>
+                            </div>
+                        </div> 
+                    </div>
+                </section>
+
+                <footer>
+                    <div class="company footer-header">
+                        <p>Company</p>
+                        <ul>
+                            <li>About</li>
+                            <li>Jobs</li>
+                            <li>For the Record</li>
+                        </ul>
+                    </div>
+
+                    <div class="communities footer-header">
+                        <p>Communities</p>
+                        <ul>
+                            <li>For Artists</li>
+                            <li>Developers</li>
+                            <li>Advertising</li>
+                            <li>Investors</li>
+                            <li>Vendors</li>
+                        </ul>
+                    </div>
+
+                    <div class="useful-links footer-header">
+                        <p>Useful links</p>
+                        <ul>
+                            <li>Support</li>
+                            <li>Free Mobile App</li>
+                        </ul>
+                    </div>
+
+                    <div class="spotify-plans footer-header">
+                        <p>Spotify Plans</p>
+                        <ul>
+                            <li>Premium Individual</li>
+                            <li>Premium Duo</li>
+                            <li>Premium Family</li>
+                            <li>Premium Student</li>
+                            <li>Spotify Free</li>
+                        </ul>
+                    </div>
+                    <div class="sociallogo">
+                        <img src="Pictures_and_logos/insta.svg" alt="insta">
+                        <img src="Pictures_and_logos/twitter.svg" alt="twitter">
+                        <img src="Pictures_and_logos/facebook.svg" alt="facebook">
+                    </div>
+                </footer>
+                <div class="rights">© 2024 Spotify AB</div>
+            </div>
+        </div>
+
+    </main>
+    <div class="popfornewuser" id="pop">
+        <div class="preview">
+            <div class="text">
+                <p>Preview of Spotify</p>
+                <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+            </div>
+            <button>Sign up for free</button>
+            <div id="cross"><i class="fa-solid fa-circle-xmark"></i></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

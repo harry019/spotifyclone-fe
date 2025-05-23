@@ -426,47 +426,16 @@ header {
     cursor: pointer;
 }
 
-.artist-container,
-.album-container,
-.radio-container,
-.featured-chart-container,
-.playlist-from-our-editor {
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    white-space: nowrap;
-    flex-wrap: nowrap;
-}
-
-.album-card,
-.radio-card,
-.featured-cards,
-.spotifyplaylists {
-    width: 140px;
-    margin: 5px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    display: inline-block;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 10px;
-    /* Space between image and name */
-    transition: transform 0.3s ease;
-    cursor: pointer;
-}
-
 .artist-card {
     width: auto;
     margin: 5px;
     position: relative;
     border-radius: 0;
-    display: inline-flex;
-    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
-    transition: transform 0.3s ease;
     cursor: pointer;
 }
 
@@ -639,8 +608,9 @@ header {
 }
 
 footer {
-    margin-top: 30px;
-    margin-bottom: 50px;
+    border-top: 1px solid rgb(53, 51, 51);
+    padding-top: 50px;
+    padding-bottom: 50px;
     display: flex;
     gap: 90px;
     border-bottom: 1px solid rgb(53, 51, 51);
@@ -1204,10 +1174,7 @@ header {
 .radio-container,
 .featured-chart-container,
 .playlist-from-our-editor {
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    white-space: nowrap;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .artist-card,
@@ -1392,9 +1359,8 @@ header {
 }
 
 footer {
-    border-top: 1px solid rgb(53, 51, 51);
-    padding-top: 50px;
-    padding-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 50px;
     display: flex;
     gap: 90px;
     border-bottom: 1px solid rgb(53, 51, 51);
@@ -1812,28 +1778,16 @@ footer .sociallogo {
         padding: 8px 10px;
     }
 
-    .artist-section h2,
-    .album-section h2,
-    .radio-section h2,
-    .Featured-Chart-section h2,
-    .oureditor-section h2 {
+    .artist-section h2{
         font-size: 16px;
         padding: 12px 0 6px 0;
     }
 
-    .artist-container,
-    .album-container,
-    .radio-container,
-    .featured-chart-container,
-    .playlist-from-our-editor {
+    .artist-container{
         gap: 8px;
     }
 
-    .artist-image img,
-    .album-image img,
-    .radio-image img,
-    .featured-image img,
-    .spotifyplaylists-image img {
+    .artist-image img{
         height: 130px;
     }
 

@@ -1,3 +1,11 @@
+document.getElementById("login").addEventListener("click", function () {
+    window.location.href = "auth.html#login"; // Assuming login/signup is in auth.html
+});
+
+document.getElementById("signup").addEventListener("click", function () {
+    window.location.href = "auth.html#signup";
+});
+
 document.addEventListener('DOMContentLoaded', function () {
     console.log("DOM fully loaded");
 
